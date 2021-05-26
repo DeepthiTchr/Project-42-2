@@ -36,7 +36,7 @@ function setup(){
 
     //create drop    
     if(frameCount % 1 === 0){
-        raindrop = new Drop(random(0, windowWidth), -100,7);
+        raindrop = new Drop(random(0, 100), -100,7);
         raindrops.push(raindrop);
     }
 
