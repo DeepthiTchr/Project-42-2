@@ -48,7 +48,7 @@ function draw(){
 
     //display rain drops
     
-    for(var i = 0; i < raindrops.length; i++){
+    for(var i = 0; i < rainDrops.length; i++){
          rainDrops[i].fall(20);
          rainDrops[i].display();
     }
