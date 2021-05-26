@@ -10,7 +10,7 @@ var batAnimation,bat;
 var engine, world;
 var rand;
 
-var rainDrops = [];
+var rainDrops = [],raindrop;
 
 var thunderCreatedFrame=0;
 
@@ -35,8 +35,8 @@ function setup(){
     umbrella = new Umbrella(200,500);
 
     //create drop    
-    if(frameCount % 1 === 0){
-        raindrop = new Drop(random(0, 100), -100,7);
+    if(frameCount % 100 === 0){
+        raindrop = new Drop(random(0, 400), -100,7);
         raindrops.push(raindrop);
     }
 
