@@ -37,10 +37,9 @@ function setup(){
     //create drop    
     if(frameCount % 100 === 0){
         raindrop = new Drop(random(0, 400), -100,7);
-        raindrops.push(raindrop);
+         rainDrops.push(raindrop);
     }
 
-    raindrop = new Drop(200,100,30);
 }
 
 function draw(){
@@ -50,12 +49,11 @@ function draw(){
     //display rain drops
     
     for(var i = 0; i < raindrops.length; i++){
-        raindrops[i].fall(20);
-        raindrops[i].display();
+         rainDrops[i].fall(20);
+         rainDrops[i].display();
     }
 
-    rainDrop.display();
-
+  
     //creating thunder
     rand = Math.round(random(1,4));
     if(frameCount % 80===0){
