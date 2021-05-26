@@ -35,7 +35,7 @@ function setup(){
     umbrella = new Umbrella(200,500);
 
     //create drop    
-    if(frameCount % 100 === 0){
+    if(frameCount % 1 === 0){
         raindrop = new Drop(random(0, 400), -100,7);
          rainDrops.push(raindrop);
     }
