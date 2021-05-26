@@ -13,7 +13,11 @@ class Drop{
     }
     //make fall function to add speed 
     fall(speed){
-        this.y += speed;
+       
+       if(this.body.position.y > height){
+
+            Matter.Body.setPosition(this.body, {x:random(0,400), y:random(0,400)})
+        }
     }
   // display function to give the x,y,radius and color
     display(){
